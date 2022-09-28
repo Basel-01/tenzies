@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #0b2434;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+main {
+  background-color: whitesmoke;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 15px #fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main h1 {
+  font-size: 40px;
+}
+main > p {
+  color: #444;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+main .dice-container {
+  width: 370px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+main .dice-container p {
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 10px -3px grey;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 30px;
+  border-radius: 7px;
+  user-select: none !important;
+}
+main button {
+  background-color: #5035FF;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  margin-top: 60px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none !important;
+}
+main button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
